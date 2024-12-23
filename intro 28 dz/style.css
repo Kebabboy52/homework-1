@@ -1,0 +1,42 @@
+
+.font-part-1, .font-part-2, .font-part-3 {
+    margin: 20px 0; /* Отступ сверху и снизу */
+    padding: 15px; /* Внутренний отступ */
+    border: 1px solid #ccc; /* Граница */
+    background-color: #f9f9f9; /* Фон */
+}
+
+
+.font-part-1 h2, .font-part-2 h2, .font-part-3 h2 {
+    margin-top: 0; /* Убираем отступ сверху */
+    font-size: 18px;
+    color: #333;
+}
+
+/* Часть 1: Open Sans, жирность 300, размер 20px, высота строки 30px, курсив */
+.font-part-1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    letter-spacing: 5px;
+    word-spacing: 30px;
+}
+
+/* Часть 2: Зачеркнутый полужирный шрифт */
+.font-part-2 {
+    font-weight: bold;
+    text-decoration: line-through;
+    letter-spacing: 5px;
+    word-spacing: 30px;
+}
+
+/* Часть 3: Times New Roman, все буквы заглавные, текст по центру */
+.font-part-3 {
+    font-family: 'Times New Roman', serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 30px;
+}
