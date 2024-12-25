@@ -1,0 +1,50 @@
+/* Общие стили для body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1c;
+    font-family: sans-serif;
+}
+
+/* Анимированный элемент */
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #ff5722, #ffc107);
+    border-radius: 50%;
+    animation: rotate 4s linear infinite, changeColor 6s ease-in-out infinite, scale 2s ease-in-out infinite;
+}
+
+/* Анимация вращения */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Анимация изменения цвета */
+@keyframes changeColor {
+    0%, 100% {
+        background: linear-gradient(45deg, #ff5722, #ffc107);
+    }
+    50% {
+        background: linear-gradient(45deg, #2196f3, #9c27b0);
+    }
+}
+
+/* Анимация масштабирования */
+@keyframes scale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
