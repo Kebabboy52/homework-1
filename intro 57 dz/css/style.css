@@ -1,0 +1,43 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 5rem;
+    padding-top: 5vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    position: relative; /* Для позиционирования псевдоэлементов */
+}
+
+/* Псевдоэлементы before и after */
+.title::before,
+.title::after {
+    content: ''; /* Обязательное свойство для псевдоэлементов */
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Делаем круги */
+    border: 5px solid #ffffff; /* Белая рамка */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50%; /* Центрируем по вертикали */
+    transform: translateY(-50%); /* Смещаем на половину высоты */
+}
+
+/* Левая окружность */
+.title::before {
+    left: -150px; /* Отступ слева */
+    background: rgb(250, 99, 99); /* Красный цвет */
+}
+
+/* Правая окружность */
+.title::after {
+    right: -150px; /* Отступ справа */
+    background: rgb(94, 94, 238); /* Синий цвет */
+}
