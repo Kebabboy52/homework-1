@@ -1,0 +1,43 @@
+/* Общие стили для body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* Для демонстрации скролла */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.parent {
+    position: fixed; /* Привязка к viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ширина родителя равна ширине окна */
+    height: 100%; /* Высота родителя равна высоте окна */
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: flex-end; /* Привязка к нижней границе */
+}
+/* Прямоугольник */
+.rectangle {
+    position: fixed; /* Привязка к viewport */
+    left: 50%; /* Левая граница занимает половину окна */
+    transform: translateX(-50%); /* Центрирование по горизонтали */
+    right: 50px; /* Правая граница с отступом 50px от правого края окна */
+    bottom: 100px; /* Нижняя граница с отступом 100px от нижнего края окна */
+    min-height: 100px; /* Минимальная высота прямоугольника */
+    background-color: #4CAF50; /* Цвет фона */
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Круг */
+.circle {
+    width: 100px; /* Размер круга */
+    height: 100px; /* Размер круга */
+    background-color: #FF5722; /* Цвет фона */
+    border-radius: 50%; /* Скругление для создания круга */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+}
