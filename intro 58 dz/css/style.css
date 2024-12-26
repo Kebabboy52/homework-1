@@ -1,0 +1,50 @@
+body {
+    background-color: #1a1a1c;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    background: #3b3a3d;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7de07d;
+    font-size: 30px;
+    overflow: visible; 
+}
+
+.box span {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 3s; 
+}
+
+.box__scale {
+    position: absolute;
+    top: -50px; 
+    left: 0;
+    width: 0; 
+    height: 20px; 
+    background: #7de07d; 
+    transition: width 3s ease-in-out; 
+    border-radius: 10px; 
+}
+
+.box:hover .box__scale {
+    width: 100%; 
+}
+
+.box:hover span {
+    opacity: 1; 
+}
+
