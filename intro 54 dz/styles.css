@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 2000px; /* Для демонстрации скролла */
+}
+
+.content {
+    padding: 20px;
+}
+
+.fixed-rectangle {
+    position: fixed;
+    left: 50%; /* Левая граница на половине окна */
+    right: 50px; /* Отступ от правого края на 50px */
+    bottom: 100px; /* Отступ от нижнего края на 100px */
+    min-height: 100px; /* Минимальная высота */
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    box-sizing: border-box;
+}
+
+.circle {
+    position: relative; /* Относительное позиционирование внутри прямоугольника */
+    left: 100px; /* Отступ слева */
+    bottom: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%; /* Делаем элемент круглым */
+    border: 2px solid darkorange;
+}
